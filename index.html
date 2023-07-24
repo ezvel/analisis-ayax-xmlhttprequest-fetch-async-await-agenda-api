@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Agenda</title>
+</head>
+<body>
+    <main>
+        <section class="agenda__input">
+            <form class="agenda__form form">
+                <div class="form__data">
+                    <label for="nom" class="form__label">Nombre</label>
+                    <input type="text" id="nom" class="form__input" name="nombre"  autocomplete="off">
+                    <label for="ape" class="form__label">Apellido</label>
+                    <input type="text" id="ape" class="form__input" name="apellido"  autocomplete="off">
+                    <label for="tel" class="form__label">Teléfono</label>
+                    <input type="tel" id="tel" class="form__input" name="telefono"  autocomplete="off">
+                    <label for="dir" class="form__label">Dirección</label>
+                    <input type="text" id="dir" class="form__input" name="direccion"  autocomplete="off">
+                    <label for="email" class="form__label">Email</label>
+                    <input type="email" id="email" class="form__input" name="email"  autocomplete="off">
+                </div>
+                <div class="form__buttons">
+                    <input type="submit" class="button__enviar" id="cargar" value="Cargar">
+                    <input type="submit" class="button__modificar" id="modificar" value="Modificar" disabled>
+                    <input type="reset" class="button__resetear" id="reset" value="Resetear">
+                </div>
+            </form>
+        </section>
+        <section class="agenda__output">
+            <table class="agenda__table table">
+                <thead class="table__head">
+                    <tr class="table__fila">
+                        <th>Apellido</th>
+                        <th>Nombre</th>
+                        <th>Teléfono</th>
+                        <th>Dirección</th>
+                        <th>Email</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="table__body">
+        
+                </tbody>
+            </table>
+            <div>
+                <p id="error">
+
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/ayax.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
